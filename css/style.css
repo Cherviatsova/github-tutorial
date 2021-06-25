@@ -1,176 +1,24 @@
 body {
-  color: #2a2a2a;
+  background-color: #f9f9fd;
   font-family: sans-serif;
+  line-height: 1.5;
+  color: #fff;
   font-size: 20px;
 }
-table caption {
-  text-align: left;
-}
-table {
-  border-collapse: collapse;
-}
-table th,
-table td {
-  padding: 10px;
-  border: 1px solid #ce730b;
-}
-section {
-  margin: 50 0 0 0;
-}
-.accent {
-  color: violet;
-}
-pre {
-  font: inherit;
-}
-/* Применится ко всем абзацам на стр */
-p {
-  font-size: 24px;
-}
-/* Применится ко всем ссылкам на стр */
-a {
-  text-decoration: none;
-}
-/* Применяется ко всем стилям с тегом title */
-#title {
-  font-weight: 500;
-  color: hsl(36, 94%, 46%);
-  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
-}
-/* Применяется ко всем ттегам с классом text */
-.text {
-  color: lightcoral;
-  font-size: 20px;
-}
-/* Общие стили для всех типов оповещения */
-.alert {
-  font-size: 20px;
-  font-weight: 400;
-}
-/* Специфические стили для каждого типа */
-.success {
-  color: rgb(45, 204, 31);
-}
-.warning {
-  color: rgb(202, 223, 15);
-}
-.error {
-  color: rgb(224, 28, 28);
-}
-.fix {
-  color: rgb(226, 133, 11);
+
+.parent {
+  background-color: #3f51b5;
 }
 
-/* Применится ко всем ссылкам которые лежат внутри тега с классом social-links */
-.social-links a {
-  color: blue;
-  text-decoration: none;
-}
-/* ❌ Не решает задачу */
-.menu li {
-  border: 1px solid tomato;
-}
-/* Будет правильно и то что нужно */
-.menu > li {
-  border: 1px solid rgb(71, 255, 132);
-}
-a[title] {
-  color: teal;
-}
-/* Непривычное форматирование фигурных скобок это нормально */
-a[href="https://htmlreference.io"]
-{
-  color: yellow;
-}
-a[href="https://cssreference.io"]
-{
-  color: rgb(81, 14, 189);
-}
-a[href="https://www.youtube.com"]
-{
-  color: #cf15cf;
-}
-.link {
-  color: teal;
-}
-.link:hover {
-  color: tomato;
-}
-.social-links .link {
-  color: teal;
-}
-.social-links .link:hover,
-.social-links .link:focus {
-  color: orange;
-}
-.social-links .link:active {
-  color: red;
-}
-.social-links .link:visited {
-  color: green;
-}
-.schedule-body > tr:hover {
-  background-color: tomato;
-  color: white;
-}
-/* Оформление таблицы */
-.schedule {
-  border-collapse: collapse;
-}
-.schedule th,
-.schedule td {
-  padding: 8px;
-  border: 1px solid #212121;
+.child {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #4caf50;
+  text-align: center;
 }
 
-.textlorem {
-  color: rgb(73, 21, 194);
-  background-color: rgba(255, 0, 0, 0.3);
-}
-.post {
-  color: green;
-}
-.post-link {
-  color: inherit;
-}
-
-:root {
-  --brand-color: #5e3fb5;
-}
-
-.section {
-  /* Другие стили */
-  border: 2px solid var(--brand-color);
-}
-
-.section-title {
-  /* Другие стили */
-  color: var(--brand-color);
-}
-
-.section-title::before {
-  /* Другие стили */
-  background-color: var(--brand-color);
-}
-
-.text {
-  font-weight: 400;
-  font-size: 20px;
-  font-style: italic;
-}
-pre {
-  font-family: "Arial", "Helvetica", sans-serif;
-  color: #2a2a2a;
-  font-size: 16px;
-}
-pre::first-letter {
-  font-family: "Tahoma", serif;
-  font-size: 32px;
-  color: #f44336;
-}
-
-/* Let's add text selection styles for each paragraph of the poem. */
-pre::selection {
-  color: rgb(99, 42, 42);
-  background-color: #72a390;
+.parent,
+.child {
+  padding: 20px;
+  border-radius: 4px;
 }
