@@ -1,24 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f9f9fd;
   font-family: sans-serif;
   line-height: 1.5;
-  color: #fff;
-  font-size: 20px;
+  color: #212121;
 }
 
-.parent {
-  background-color: #3f51b5;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.child {
-  max-width: 300px;
-  margin: 0 auto;
-  background-color: #4caf50;
-  text-align: center;
-}
-
-.parent,
-.child {
+.post {
+  /* Setting the margin between the border and the element's content */
   padding: 20px;
-  border-radius: 4px;
+
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px dashed #2a2a2a;
+}
+
+/* Set the bottom margin between the "thumb" and the title  */
+.post-thumb {
+  margin-bottom: 30px;
+  border: 2px dashed tomato;
+}
+
+/* Clearing the default top padding of the title
+    and set the bottom margin between the heading and paragraph */
+.post-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  border: 2px dashed teal;
+}
+
+/* Clearing default paragraph indents from the browser */
+.post-text {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  border: 2px dashed blue;
 }
