@@ -1,49 +1,26 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html {
+  font-family: sans-serif;
 }
 
 body {
-  font-family: sans-serif;
+  width: 70%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+button {
+  font-size: 18px;
   line-height: 1.5;
-  color: #212121;
+  width: 15%;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+div {
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-.post {
-  /* Setting the margin between the border and the element's content */
-  padding: 20px;
-
-  max-width: 400px;
-  background-color: #fff;
-  border: 2px dashed #2a2a2a;
-}
-
-/* Set the bottom margin between the "thumb" and the title  */
-.post-thumb {
-  margin-bottom: 30px;
-  border: 2px dashed tomato;
-}
-
-/* Clearing the default top padding of the title
-    and set the bottom margin between the heading and paragraph */
-.post-heading {
-  margin-top: 0;
-  margin-bottom: 20px;
-
-  border: 2px dashed teal;
-}
-
-/* Clearing default paragraph indents from the browser */
-.post-text {
-  margin-bottom: 0;
-  margin-top: 0;
-
-  border: 2px dashed blue;
+button:last-child {
+  order: -1;
 }
