@@ -8,38 +8,48 @@
     <title>Git rules!</title>
 </head>
 <body>
-   
+  
 
-<article class="product">
-    <img src="./images/apples.jpg" alt="Яблоки" />
-
-    <!-- div а не ul, чтобы вам было меньше разметки разбирать -->
+    <article class="product">
+    <div class="product-thumb">
+    <img src="./images/apples.jpg" alt="Яблоки" width="370"/>
+    <div class="product-overlay">
     <div class="product-actions">
+        
         <button aria-label="В избранное" class="item">
             <svg class="icon">
                 <use href="./images/sprite.svg#star"></use>
             </svg>
         </button>
+    
+
+
 
         <button aria-label="Написать отзыв" class="item">
             <svg class="icon">
                 <use href="./images/sprite.svg#edit"></use>
             </svg>
         </button>
-
+        
+    
         <button aria-label="В закладки" class="item">
             <svg class="icon">
                 <use href="./images/sprite.svg#home"></use>
             </svg>
         </button>
     </div>
+    </div>
+</div>
+    
+   
 
-    <div class="product-meta">
+     <div class="product-meta">
         <h2 class="product-name">Красные яблоки</h2>
         <p class="product-price">Цена: 100 кредитов</p>
     </div>
-</article>
+</article> 
 
-</body>
+
+
 </body>
 </html>
