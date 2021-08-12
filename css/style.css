@@ -1,24 +1,47 @@
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+@media screen and (max-width: 767px) {
+  .form-buy__rules {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-buy__rules-icon {
+    display: flex;
+    position: relative;
+  }
+}
+.form-buy__input-icon {
+  margin-left: 17px;
+}
+.form-buy__span-icon {
   position: absolute;
-  /* top: 20px;
-  left: 20px; */
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
 }
-.icon {
-  /* content: " "; */
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: tomato;
-  border: 2px solid black;
-  border-radius: 4px;
+.form-buy__rules-text {
+  -webkit-box-align: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-left: 9px;
+  letter-spacing: 0.03em;
+  user-select: none;
+  color: #212121;
 }
-.checkbox:checked + .icon {
-  background-color: blue;
-}
-.label {
-  display: inline-block;
-  outline: 1px solid black;
+.form-buy__rules-link {
+  color: #2196f3;
+  text-decoration: underline;
 }
