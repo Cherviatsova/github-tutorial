@@ -1,41 +1,24 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  opacity: 1;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-} */
-
-.modal {
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-
-  min-height: 300px;
-  min-width: 400px;
-  padding: 15px;
-
-  background-color: #fff;
-
-  transform: translate(-50%, -50%);
+  /* top: 20px;
+  left: 20px; */
+}
+.icon {
+  /* content: " "; */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.checkbox:checked + .icon {
+  background-color: blue;
+}
+.label {
+  display: inline-block;
+  outline: 1px solid black;
 }

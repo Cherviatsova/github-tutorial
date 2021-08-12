@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+        <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,63 +12,40 @@
 <body>
   
 
-   href="./index.html">Назад на главную</a>
+  <a href="./index.html">Назад на главную</a>
 
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
-    veniam sit accusantium porro dolorum, similique cumque unde atque eaque
-    eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
-    eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
-    consequuntur possimus libero fugit itaque odit ad, officia quisquam.
-    Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
-    corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
-    Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
-    non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
-    corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
-    aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
-    eligendi, temporibus, consequatur excepturi illum natus iusto culpa
-    beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
-    obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
-    repellat provident. Nam ratione nihil rerum quos eaque itaque autem
-    eveniet deserunt, dicta similique consequuntur a consectetur tempora
-    dolorem eius repudiandae iusto temporibus totam omnis!
-</p>
 
-<button data-open-modal>Открыть модалку</button>
+<form class="form">
+    <ul>
+        <li>
+            <label class="label">
+                <input class="checkbox" type="checkbox" name="topic" value="html" />
+               <span class="icon"></span> 
+               HTML
+            </label>
+        </li>
+        <li>
+            <label class="label">
+                <input class="checkbox" type="checkbox" name="topic" value="css" />
+                <span class="icon"></span>
+                CSS
+            </label>
+        </li>
+        <li>
+            <label class="label">
+                <input class="checkbox" type="checkbox" name="topic" value="js" />
+                <span class="icon"></span>
+               JavaScript
+            </label>
+        </li>
+    </ul>
 
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
-    veniam sit accusantium porro dolorum, similique cumque unde atque eaque
-    eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
-    eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
-    consequuntur possimus libero fugit itaque odit ad, officia quisquam.
-    Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
-    corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
-    Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
-    non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
-    corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
-    aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
-    eligendi, temporibus, consequatur excepturi illum natus iusto culpa
-    beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
-    obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
-    repellat provident. Nam ratione nihil rerum quos eaque itaque autem
-    eveniet deserunt, dicta similique consequuntur a consectetur tempora
-    dolorem eius repudiandae iusto temporibus totam omnis!
-</p>
+    <button type="submit">Оставить заявку</button>
+</form>
 
-<div class="backdrop is-hidden" data-backdrop>
-    <div class="modal">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-            debitis quibusdam doloremque perspiciatis distinctio consequuntur
-            nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-            quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-            iusto eius aut facilis doloribus aliquam quae vitae dolor
-            voluptatibus? Accusamus corrupti cumque odio illo.
-        </p>
-        <button data-close-modal>Закрыть</button>
-    </div>
-</div>
+
+
+
 
 <script>
     const refs = {
