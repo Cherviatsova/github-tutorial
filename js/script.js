@@ -36,11 +36,11 @@
 //     case dayUntilDeadLine === 0:
 //         console.log('Сегодня');
 //         break;
-    
+
 //     case dayUntilDeadLine === 1:
 //         console.log('Завтра');
 //         break;
-    
+
 //     default:
 //     console.log('Послезавтра');
 // }
@@ -138,7 +138,7 @@
 //     if (min > number) {
 //         min = number;
 //     }
-    
+
 // }
 // console.log(min);
 
@@ -152,9 +152,9 @@
 //     const minutes = totalMinutes % 60;
 //     const doubleDigitHours = addLeadingZero(hours);
 //     const doubleDigitMinutes = addLeadingZero(minutes);
-    
+
 //     return `${doubleDigitHours}:${doubleDigitMinutes}`;
-    
+
 // }
 
 // console.log(formatTime(70));  // "01:10"
@@ -169,7 +169,7 @@
 
 
 // function calcBMI(weight, height) {
-    
+
 //     const numericWeight = weight.replace(',', '.');
 //     const numericHeight = height.replace(',', '.');
 //     let bmi = numericWeight / numericHeight ** 2;
@@ -209,15 +209,15 @@
     // 'use strict'; 
     //     console.log('script.js loaded');
 
-        
+
     //     paper.install(window);
     //     paper.setup(document.getElementById('mainCanvas'));
-       
+
     //     var tool = new Tool();
     //     var с = Shape.Circle(200, 200, 80);
     //     c.fillColor = 'green';
     //     var text = new PointText(200, 200);
-        
+
     //     text.justification = 'center'; 
     //     text.fillColor = 'white'; 
     //     text.fontSize = 20; 
@@ -226,8 +226,95 @@
     //         var c = Shape.Circle(event.point.x, event.point.y, 20);
     //         c.fillColor = 'green';
     //     };
-            
-    
+
+
     //     paper.view.draw();
     // });
-    
+
+
+
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//   order(pizzaName) {},
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// pizzaPalace.order('Smoked', makePizza, onOrderError);
+// pizzaPalace.order('Four meats', makePizza, onOrderError);
+// pizzaPalace.order('Big Mike', makePizza, onOrderError);
+// pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+// const getUsersWithEyeColor = (users, color) => {
+//  users.filter(user => user.eyeColor === color)
+//   return color;
+  
+// };
+
+// =========ФУНКЦИИ=========//
+// function calculateAge(year) {
+//     return 2020 - year
+// }
+// // console.log(calculateAge(2000))
+
+// function logInAbout(name, year) {
+//     const age = calculateAge(year)
+//     if (age > 0) {
+//         console.log('Человек по имени ' + name + ' имеет возраст ' + age)
+//     } else {
+//         console.log('Неверный формат')
+//     }
+// }
+// logInAbout('Elena', 2022 )
+
+
+//========= МАССИВЫ========//
+// const cars = ['bmw', 'ford', 'volvo']
+// // const cars = new Array('bmw', 'ford', 'volvo')
+// console.log(cars.length)
+// console.log(cars[1])
+
+// cars[0] = 'lada'
+// console.log(cars)
+// cars[cars.length] = 'bmw'
+// console.log(cars)
+
+
+//=================== ЦИКЛЫ==================//
+// const cars = ['bmw', 'ford', 'volvo']
+// // for (let i = 0; i < cars.length; i += 1) {
+// //     const car = cars[1]
+// //     console.log(car)
+// // }
+
+// for (let car of cars)
+// console.log(car)
+
+
+// =============ОБЪЕКТЫ============ЭТО ГРУППИРОВКА// ключ и значение
+// const person = {
+//     firstName: 'Elena',
+//     lastName: 'Cherviatsova',
+//     year: 1984,
+//     languages: ['Ru', 'En', 'Ua'],
+//     greet: function() {
+//      console.log('greet from person')   
+//     }
+// }
+// console.log(person.firstName)
+// console.log(person['lastName'])
+// const key = 'languages'
+// console.log(person[key])
+// person.isProgrammer = true
+// console.log(person)
+// person.greet()
