@@ -406,10 +406,66 @@
     <title>Мастерская: модальное окно</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="/css/colorpicker.css" />
+<!-- <style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        outline: 2px solid tomato;
+    }
+
+    button {
+        margin: 4px;
+    }
+</style> -->
+
+<!-- <style>
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 8px;
+        background-color: #fff;
+        list-style: none;
+        user-select: none;
+        outline: 1px solid tomato;
+    }
+
+    .tags__item {
+        margin: 4px;
+    }
+
+    .tags__btn {
+        border: 1px solid #212121;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 4px 10px 4px;
+
+        font-size: 24px;
+        font-family: inherit;
+        color: #212121;
+        font-weight: 500;
+        text-align: center;
+        white-space: nowrap;
+        text-decoration: none;
+        outline: none;
+
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .tags__btn--active {
+        color: #fff;
+        background-color: #3f51b5;
+    }
+</style> -->
+
 </head>
 
 <body>
-    <p><a href="/">На главную</a></p>
+    <!-- <p><a href="/">На главную</a></p>
 
     <button class="button" data-action="open-modal">Открыть модалку</button>
 
@@ -432,7 +488,80 @@
         </div>
     </div>
 
-    <script src="./js/06-modal.js" type="module"></script>
+    <script src="./js/06-modal.js" type="module"></script> -->
+
+
+<!-- // 01- building// -->
+
+
+<!-- <p><a href="/">На главную</a></p>
+
+<div id="parent">
+    PARENT
+    <div id="child">
+        CHILD
+        <div id="inner-child">INNER-CHILD</div>
+    </div>
+</div>
+
+<script src="/js/01-bubbling.js" type="module"></script> -->
+
+
+<!-- //02-delegation//
+<p><a href="/">На главную</a></p>
+
+<button class="js-add-btn">Добавить кнопку</button>
+<hr />
+
+<div class="container js-container">
+    <button type="button">Кнопка 1</button>
+    <button type="button">Кнопка 2</button>
+    <button type="button">Кнопка 3</button>
+    <button type="button">Кнопка 4</button>
+    <button type="button">Кнопка 5</button>
+</div>
+
+<script src="/js/02-delegation.js" type="module"></script> -->
+
+
+<!-- //03-tags.js// -->
+<!-- <p><a href="/">На главную</a></p>
+
+<ul class="tags js-tags">
+    <li class="tags__item">
+        <button class="tags__btn" data-value="html">#html</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="css">#css</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="javascript">#javascript</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="npm">#npm</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="webpack">#webpack</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="react">#react</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="redux">#redux</button>
+    </li>
+    <li class="tags__item">
+        <button class="tags__btn" data-value="nodejs">#nodejs</button>
+    </li>
+</ul>
+
+<script src="/js/03-tags.js" type="module"></script> -->
+
+
+<p><a href="/">На главную</a></p>
+
+<div class="palette js-palette"></div>
+
+<script src="/js/04-colorpicker.js" type="module"></script>
 </body>
 
 </html> -->
